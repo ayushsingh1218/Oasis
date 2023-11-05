@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://st.icons8.com/tmp-web-fonts/71/a0">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Ayush Kumar Singh</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skill">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <img
+              id="modeToggle"
+              class="icon color-icon"
+              src="./asset/mode/light_mode.png"
+              src-light="./asset/mode/light_mode.png"
+              src-dark="./asset/mode/dark_mode.png"
+              alt="Color them icon"
+            />
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Ayush Kumar Singh</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skill" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li>
+            <img
+              id="modeToggle"
+              class="icon color-icon"
+              src="./asset/mode/light_mode.png"
+              src-light="./asset/mode/light_mode.png"
+              src-dark="./asset/mode/dark_mode.png"
+              alt="Color them icon"
+            />
+          </li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src=".\asset\Photo ayush.jpg" alt="Ayush Kumar Singh profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Ayush Kumar Singh</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('https://github.com/ayushsingh1218/resume/blob/main/Ayush_Kumar%20Singh_Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src=".\asset\logo\linkedin.png"
+            src-light=".\asset\logo\linkedin\linkedin.png"
+            src-dark=".\asset\logo\linkedin\linkedin_dark.png" 
+            alt="My LinkedIn profile"
+            class="icon linkedin-icon"
+            onclick="location.href='https://www.linkedin.com/in/ayush-singh-21366422a/'"
+          />
+          <img
+            src=".\asset\logo\git\github.png"
+            src-light=".\asset\logo\git\github.png"
+            src-dark=".\asset\logo\git\github_dark.png"
+            alt="My github profile"
+            class="icon github-icon"
+            onclick="location.href='https://github.com/ayushsingh1218'"
+          />
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src=".\asset\Photo ayush.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src=".\asset\about\experience\worklight.png"
+                src-light=".\asset\about\experience\worklight.png"
+                src-dark=".\asset\about\experience\workdark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1 years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src=".\asset\about\education\educationlight.png"
+                src-light=".\asset\about\education\educationlight.png"
+                src-dark=".\asset\about\education\educationdark.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Tech. <br />Computer Science and Engineering</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Tech-savvy fresher with a B.Tech degree. Skilled in HTML, CSS, JavaScript, Java, OOPs, SQL, and DBMS Strong foundation in web development, passionate about creating dynamic and user-friendly applications. I am eager to contribute to innovative projects and grow as a professional.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="skill">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">skills</h1>
+      <div class="skill-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skill-sub-title">Technical Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src=".\asset\tech-skill\java.png"
+                  src-light=".\asset\tech-skill\java.png"
+                  src-dark=".\asset\tech-skill\java.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src=".\asset\tech-skill\html-5.png"
+                  src-light=".\asset\tech-skill\html-5.png"
+                  src-dark=".\asset\tech-skill\html-5.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src=".\asset\tech-skill\css.png"
+                  src-light=".\asset\tech-skill\css.png"
+                  src-dark=".\asset\tech-skill\css.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src=".\asset\tech-skill\js.png"
+                  src-light=".\asset\tech-skill\js.png"
+                  src-dark=".\asset\tech-skill\js.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src=".\asset\tech-skill\mysql.png"
+                  src-light=".\asset\tech-skill\mysql.png"
+                  src-dark=".\asset\tech-skill\mysql.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src=".\asset\tech-skill\git.png"
+                  src-light=".\asset\tech-skill\git.png"
+                  src-dark=".\asset\tech-skill\git.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git & GitHub</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="skill-sub-title">Professional Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src=".\asset\pro-skill\team.png"
+                  src-light=".\asset\pro-skill\team.png"
+                  src-dark=".\asset\pro-skill\team.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Team Work</h3>
+                  <meter min="0"
+                  max="100"
+                  low="25"
+                  high="75"    
+                  optimum="80"              
+                  value="85"
+                  ></meter>
+                  <!--<p>Intermediate</p>-->
+                </div>
+              </article>
+              <article>
+                <img
+                  src=".\asset\pro-skill\creativity.png"
+                  src-light=".\asset\pro-skill\creativity.png"
+                  src-dark=".\asset\pro-skill\creativity.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Creativity</h3>
+                  <meter min="0"
+                  max="100"
+                  low="25"
+                  high="75"    
+                  optimum="80"              
+                  value="75"
+                  ></meter>
+                  <!--<p>Intermediate</p>-->
+                </div>
+              </article>
+              <article>
+                <img
+                  src=".\asset\pro-skill\problem_solving.png"
+                  src-light=".\asset\pro-skill\problem_solving.png"
+                  src-dark=".\asset\pro-skill\problem_solving.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Problem Solving</h3>
+                  <meter min="0"
+                  max="100"
+                  low="25"
+                  high="75"    
+                  optimum="80"              
+                  value="75"
+                  ></meter>
+                  <!--<p>Intermediate</p>-->
+                </div>
+              </article>
+              <article>
+                <img
+                  src=".\asset\pro-skill\communication.png"
+                  src-light=".\asset\pro-skill\communication.png"
+                  src-dark=".\asset\pro-skill\communication.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Communication</h3>
+                  <meter min="0"
+                  max="100"
+                  low="25"
+                  high="75"    
+                  optimum="80"              
+                  value="75"
+                  ></meter>
+
+                  <!--<p>Intermediate</p>-->
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </section>
+    <hr>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="skill-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <h2 class="skill-sub-title project-title">SMS-Sender </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ayushsingh1218'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ayushsingh1218/SEnd-SMS'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <hr>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src=".\asset\logo\mail.png"
+            src-light=".\asset\logo\mail.png"
+            src-dark=".\asset\logo\mail.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:ayushkrsingh369@gmail.com">ayushkrsingh369@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src=".\asset\logo\linkedin"
+            src-light=".\asset\logo\linkedin\linkedin_dark.png"
+            src-dark=".\asset\logo\linkedin\linkedin_dark.png"
+            alt="My LinkedIn profile"
+            class="icon linkedin-icon"
+            onclick="location.href='https: //www.linkedin.com/'"
+          />
+          <p><a href="https://www.linkedin.com/in/ayush-singh-21366422a/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links" >
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p style="background-color: rgb(51, 51, 51); color: aliceblue;">Copyright &#169; 2023 Ayush Kumar Singh. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
